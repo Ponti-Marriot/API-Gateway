@@ -1,0 +1,16 @@
+
+@host=http://localhost:8080
+###
+GET {{host}}/simple-microservice/simple/hola
+
+###
+
+GET {{host}}/actuator/health
+
+###
+GET {{host}}/actuator/gateway
+
+###
+GET {{host}}/actuator/gateway
+###
+GET {{host}}/actuator/gateway/routes
