@@ -32,6 +32,8 @@ public class SecurityConfig {
                         //.hasRole("ADMIN")
 
                         .pathMatchers(HttpMethod.POST, "/usuarios/registro").permitAll()
+                        .pathMatchers(HttpMethod.GET, "/usuarios/inicioSesion").permitAll()
+
                         //.hasRole("empleado")
 
                         // For any other request, the user must be authenticated
