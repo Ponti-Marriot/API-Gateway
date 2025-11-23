@@ -6,7 +6,6 @@ spring:
     gateway:
       server:
         webflux:
-          ## Integration with eureka to discover all the routes
           discovery:
             locator:
               enabled: true

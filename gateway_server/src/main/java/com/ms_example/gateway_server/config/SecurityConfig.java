@@ -31,8 +31,8 @@ public class SecurityConfig {
                         //.pathMatchers(HttpMethod.GET, "/simple-microservice/simple/**")
                         //.hasRole("ADMIN")
 
-                        .pathMatchers(HttpMethod.POST, "/ms_usuarios/**")
-                        .hasRole("empleado")
+                        .pathMatchers(HttpMethod.POST, "/usuarios/registro").permitAll()
+                        //.hasRole("empleado")
 
                         // For any other request, the user must be authenticated
                         .anyExchange().authenticated())
