@@ -29,10 +29,12 @@ public class SecurityConfig {
 
                         // Allow access to simple microservice to certain roles
                         //.pathMatchers(HttpMethod.GET, "/simple-microservice/simple/**")
-                        //.hasRole("ADMIN")
+                        //.hasRole("ADMIN") 
 
                         .pathMatchers(HttpMethod.POST, "/usuarios/registro").permitAll()
                         .pathMatchers(HttpMethod.GET, "/usuarios/inicioSesion").permitAll()
+                        .pathMatchers(HttpMethod.GET, "/manejadorDb/db/reservas").permitAll()
+                        .pathMatchers(HttpMethod.POST, "/manejadorDb/db/reservas").permitAll()
 
                         //.hasRole("empleado")
 
