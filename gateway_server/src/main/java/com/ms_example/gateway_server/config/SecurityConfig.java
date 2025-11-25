@@ -33,8 +33,9 @@ public class SecurityConfig {
 
                         .pathMatchers(HttpMethod.POST, "/usuarios/registro").permitAll()
                         .pathMatchers(HttpMethod.GET, "/usuarios/inicioSesion").permitAll()
-                        .pathMatchers(HttpMethod.GET, "/manejadorDb/db/reservas").permitAll()
-                        .pathMatchers(HttpMethod.POST, "/manejadorDb/db/reservas").permitAll()
+                        .pathMatchers(HttpMethod.GET, "/manejadorDb/db/reservas/**").permitAll()
+                        .pathMatchers(HttpMethod.POST, "/manejadorDb/db/reservas/**").permitAll()
+                        .pathMatchers(HttpMethod.PUT, "/manejadorDb/db/reservas/**").permitAll()
 
                         //.hasRole("empleado")
 
